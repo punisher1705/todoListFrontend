@@ -8,18 +8,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { ToastrModule } from 'ngx-toastr';
+import { OtpComponent } from './otp/otp.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 
 @NgModule({
-  declarations: [LoginComponent, SignupComponent],
+  declarations: [LoginComponent, SignupComponent, OtpComponent, ForgotPasswordComponent],
   imports: [
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     RouterModule.forChild([
-      {path:'signup', component: SignupComponent}
+      {path:'signup', component: SignupComponent},
+      {path:'otp', component: OtpComponent},
+      {path:'forgotPassword', component: ForgotPasswordComponent}
     ])
   ]
 })

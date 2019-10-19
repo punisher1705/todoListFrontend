@@ -4,3 +4,32 @@ p{
     justify-content: center;
     align-content: space-between;
 }
+
+.container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.hover-transition {
+    width: 200px;
+    height: 38px;
+    align-self: center;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.1s, height 0.1s;
+    background-color: rgba(52,58,64,0.2);
+}
+
+.hover-transition:hover {
+    width: 204px;
+    height: 40px;
+    background: aliceblue;
+    /* box-shadow: 2px 2px whitesmoke; */
+}

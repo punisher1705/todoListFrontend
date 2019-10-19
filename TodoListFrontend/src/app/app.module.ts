@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 // routing
 import { RouterModule, ROUTES } from '@angular/router';
 import { UsersModule } from './users/users.module';
-import { LoginComponent } from './users/login/login.component';
-import { HttpClientModule } from '@angular/common/http'
-
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
- 
 import { ToastrModule } from 'ngx-toastr';
+
+import { LoginComponent } from './users/login/login.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+
 
 //toast message 
 // import {}
@@ -26,12 +27,13 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule, 
     ToastrModule.forRoot(),
     UsersModule,
+    DashboardModule,
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent, pathMatch: 'full'},
       {path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: '*', component: LoginComponent },
-      { path: '**', component: LoginComponent }
+      { path: '**', component: LoginComponent },
     ])
   ],
   providers: [],
