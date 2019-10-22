@@ -1,1 +1,147 @@
-<p>dash-view works!</p>
+<div class="container-fluid pt-4">
+    <h4 id="welcomeUser">{{username}}'s Dashboard..</h4>
+    <div class="graph mt-3">
+        <div class="chart chartSize p-4">
+            <canvas baseChart  [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+                [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors"
+                [legend]="pieChartLegend" width="500" height="500">
+            </canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="allTodos col-lg-6 col-md-6">
+            <h4>All Todos</h4>
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" colspan="2">ToDo</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="/" routerLink='/allTodo'>More..</a>
+        </div>
+        <div class="todayTodoys col-lg-6 col-md-6">
+            <h4>Today's Todos</h4>
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" colspan="2">ToDo</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="/" routerLink='/allTodo'>More..</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="inProgressTodos col-lg-6 col-md-6">
+            <h4>Doing Todos</h4>
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" colspan="2">ToDo</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="/" routerLink='/allTodo'>More..</a>
+        </div>
+        <div class="doneTodods col-lg-6 col-md-6">
+            <h4>Done Todos</h4>
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" colspan="2">ToDo</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="/" routerLink='/allTodo'>More..</a>
+        </div> 
+    </div>
+</div>

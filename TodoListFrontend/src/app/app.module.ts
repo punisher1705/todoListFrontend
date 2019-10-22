@@ -13,6 +13,11 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { LoginComponent } from './users/login/login.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { DataTablesModule } from 'angular-datatables';
+import { TodoMainModule } from './todo-main/todo-main.module';
+import { AllTodoComponent } from './todo-main/all-todo/all-todo.component';
+import { CreateTodoComponent } from './todo-main/create-todo/create-todo.component';
+import { EditTodoComponent } from './todo-main/edit-todo/edit-todo.component';
 
 
 //toast message 
@@ -28,13 +33,16 @@ import { DashboardModule } from './dashboard/dashboard.module';
     ToastrModule.forRoot(),
     UsersModule,
     DashboardModule,
+    TodoMainModule,
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent, pathMatch: 'full'},
       {path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: '*', component: LoginComponent },
-      { path: '**', component: LoginComponent },
-    ])
+      { path: '**', component: LoginComponent }
+
+    ]),
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
