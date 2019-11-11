@@ -1,15 +1,19 @@
 <div class="container-fluid pt-4">
     <h4 id="welcomeUser">{{username}}'s Dashboard..</h4>
     <div class="graph mt-3">
-        <div class="chart chartSize p-4">
-            <canvas baseChart  [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
-                [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors"
-                [legend]="pieChartLegend" width="500" height="500">
+        <div style="display: block;">
+            <canvas baseChart 
+              [data]="pieChartData" 
+              [labels]="pieChartLabels" 
+              [chartType]="pieChartType"
+              [options]="pieChartOptions"
+              [plugins]="pieChartPlugins"
+              [legend]="pieChartLegend">
             </canvas>
-        </div>
+          </div>
     </div>
     <div class="row">
-        <div class="allTodos col-lg-6 col-md-6">
+        <div class="allTodos col-lg-4 col-md-4 mt-4">
             <h4>All Todos</h4>
             <table class="table table-sm">
                 <thead>
@@ -42,7 +46,7 @@
               </table>
               <a href="/" routerLink='/allTodo'>More..</a>
         </div>
-        <div class="todayTodoys col-lg-6 col-md-6">
+        <div class="todayTodoys col-lg-4 col-md-4 mt-4">
             <h4>Today's Todos</h4>
             <table class="table table-sm">
                 <thead>
@@ -77,7 +81,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="inProgressTodos col-lg-6 col-md-6">
+        <div class="inProgressTodos col-lg-4 col-md-4 mt-4">
             <h4>Doing Todos</h4>
             <table class="table table-sm">
                 <thead>
@@ -110,7 +114,7 @@
               </table>
               <a href="/" routerLink='/allTodo'>More..</a>
         </div>
-        <div class="doneTodods col-lg-6 col-md-6">
+        <div class="doneTodods col-lg-4 col-md-4 mt-4">
             <h4>Done Todos</h4>
             <table class="table table-sm">
                 <thead>

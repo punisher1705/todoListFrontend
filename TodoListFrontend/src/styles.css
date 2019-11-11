@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    height: 100%; 
-    width:100%; 
+    height:100vh; 
+    widows: 100%; 
     background-image: url('./assets/images/main_bg.jpg'); 
     background-size: cover; 
     background-repeat:no-repeat;
-    background-position: fixed;
+    background-position: center;
+    background-attachment: fixed;
 }
